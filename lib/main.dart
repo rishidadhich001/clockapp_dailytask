@@ -1,4 +1,5 @@
 import 'package:clockapp_dailytask/screens/buttonpage.dart';
+import 'package:clockapp_dailytask/screens/frontpage.dart';
 import 'package:flutter/material.dart';
 void main()
 {
@@ -12,7 +13,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
-        ('/'):(context)=>const Buttonpage(),
+        ('/'):(context)=>const Frontpage(),
+        ('/button'):(context)=>const Buttonpage(),
       },
     );
   }
