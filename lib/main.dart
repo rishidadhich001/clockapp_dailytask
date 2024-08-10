@@ -13,8 +13,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
-        ('/'):(context)=>const Frontpage(),
-        ('/button'):(context)=>const Buttonpage(),
+        ('/'):(context)=> Frontpage(),
+        // ('/button'):(context)=> Buttonpage(),
       },
     );
   }

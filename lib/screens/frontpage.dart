@@ -13,6 +13,7 @@ class Frontpage extends StatefulWidget {
 class _FrontpageState extends State<Frontpage> {
   @override
   void initState() {
+
     // TODO: implement initState
     super.initState();
     Timer.periodic(
@@ -31,7 +32,7 @@ class _FrontpageState extends State<Frontpage> {
         height:double.infinity,
         width:double.infinity,
         decoration: BoxDecoration(
-          image: DecorationImage(image: NetworkImage(img2),fit: BoxFit.cover),
+          image: DecorationImage(image:),
         ),
        child: Column(
          children: [
@@ -39,7 +40,7 @@ class _FrontpageState extends State<Frontpage> {
            Row(
              mainAxisAlignment: MainAxisAlignment.center,
              children: [
-               Text('${(dateTime.hour%12).toString().padLeft(2,'0')}:${dateTime.minute.toString().padLeft(2,'0')}',style: TextStyle(fontSize: 40,color: Colors.white,fontWeight: FontWeight.bold),),
+               Text('${(dateTime.hour%12==0)?12:(dateTime.hour).toString().padLeft(2,'0')}:${dateTime.minute.toString().padLeft(2,'0')}',style: TextStyle(fontSize: 40,color: Colors.white,fontWeight: FontWeight.bold),),
                SizedBox(width: 10,),
                Text('${dateTime.second.toString().padLeft(2,'0')} : ${r=(dateTime.hour>=12)?'PM':'AM'}',style: TextStyle(fontSize: 20,color: Colors.white,height:0,fontWeight: FontWeight.bold),),
              ],
