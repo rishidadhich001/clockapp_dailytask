@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       routes: {
         ('/'):(context)=> const Frontpage(),
         ('/analog'):(context)=> const Analogpage(),
-        ('/strap'):(context)=>const Strappage()
+        ('/strap'):(context)=>const Strappage(),
         // ('/button'):(context)=> Buttonpage(),
       },
     );
