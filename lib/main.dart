@@ -1,5 +1,6 @@
-import 'package:clockapp_dailytask/screens/buttonpage.dart';
+import 'package:clockapp_dailytask/screens/analogpage.dart';
 import 'package:clockapp_dailytask/screens/frontpage.dart';
+import 'package:clockapp_dailytask/screens/strappage.dart';
 import 'package:flutter/material.dart';
 void main()
 {
@@ -13,7 +14,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
-        ('/'):(context)=> Frontpage(),
+        ('/'):(context)=> const Frontpage(),
+        ('/analog'):(context)=> const Analogpage(),
+        ('/strap'):(context)=>const Strappage()
         // ('/button'):(context)=> Buttonpage(),
       },
     );

@@ -16,14 +16,14 @@ class _ButtonpageState extends State<Buttonpage> {
         backgroundColor: Colors.white,
         child: Column(
           children: [
-            DrawerHeader(
+            const DrawerHeader(
               child: Column(
                 children: [
                   CircleAvatar(
                     radius: 50,
-                    backgroundImage: NetworkImage(img),
+                    backgroundImage: NetworkImage('img'),
                   ),
-                  const Text(
+                  Text(
                     'Rishi Dadhich',
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                   ),

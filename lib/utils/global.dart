@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-// String img="https://media.tenor.com/ofWiNbftFW0AAAAM/lord-shiv-ji.gif";
-// String img2="https://i.gifer.com/origin/20/20d7ae18e4271de49ac9430a2329dfa6_w200.gif";
+String img1="https://media.tenor.com/ofWiNbftFW0AAAAM/lord-shiv-ji.gif";
+String img2="https://i.gifer.com/origin/20/20d7ae18e4271de49ac9430a2329dfa6_w200.gif";
+String strap1="assets/img/strap1.jpg";
 List drawer=[
   {
     'icon':Icons.list_alt,
@@ -60,12 +61,12 @@ List months = [
   'Dec',
 ];
 List img=[
-  'Asset/img/sunrise.jpeg',
-  'Asset/img/full day.jpeg',
-  'Asset/img/afternoon.jpeg',
-  'Asset/img/evening.jpeg',
-  'Asset/img/night.jpeg',
-  'Asset/img/moon.jpeg',
+  'assets/img/sunrise1.jpeg',
+  'assets/img/fullday1.jpeg',
+  'assets/img/afternoon1.jpeg',
+  'assets/img/evening1.jpeg',
+  'assets/img/night1.jpeg',
+  'assets/img/moon1.jpeg',
 ];
 gif()
 {
@@ -94,3 +95,7 @@ gif()
     return img[5];
   }
 }
+int second=0;
+int minute=0;
+int hour=0;
+bool stop=false;
