@@ -1,16 +1,5 @@
-# clockapp_dailytask
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="https://github.com/user-attachments/assets/f6c14b48-d7ff-4437-903b-59ea7d144cd5" height=500px>
+<img src="https://github.com/user-attachments/assets/6c65951e-0998-4692-90f8-4c327c09617b" height=500px>
+<img src="https://github.com/user-attachments/assets/ca3bb2c6-2295-4e7a-87fe-126c031c7e46" height=500px>
+<img src="https://github.com/user-attachments/assets/8e79cc41-1f62-435a-9aff-19199ab4a357" height=500px>
+<img src="https://github.com/user-attachments/assets/f743d0d7-3abc-4d1e-9262-ffe063b40b90" height=500px>
