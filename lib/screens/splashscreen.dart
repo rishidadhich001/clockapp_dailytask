@@ -33,7 +33,6 @@ class _Splash_screenState extends State<Splash_screen> {
           width: 250,
           decoration: BoxDecoration(
             color: Colors.white,
-            shape: BoxShape.circle,
             image: DecorationImage(
               image: NetworkImage(logo),
               fit: BoxFit.cover,
