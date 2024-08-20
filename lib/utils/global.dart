@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 String img1="https://media.tenor.com/ofWiNbftFW0AAAAM/lord-shiv-ji.gif";
 String img2="https://i.gifer.com/origin/20/20d7ae18e4271de49ac9430a2329dfa6_w200.gif";
-String strap1="assets/img/strap1.jpg";
+String strap="assets/img/strap.jpg";
+String ph="https://plus.unsplash.com/premium_photo-1672242577985-03a14f1389db?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2FsbHBhcGVyJTIwZm9yJTIwbW9iaWxlfGVufDB8fDB8fHww";
+String logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfOkYOLjWU1r4EzXrP4gyAXHQwR6SOzsTVUA&s";
 List drawer=[
   {
     'icon':Icons.list_alt,
@@ -99,3 +101,12 @@ int second=0;
 int minute=0;
 int hour=0;
 bool stop=false;
+
+var timersecond=0;
+var timerminute=0;
+var timerhour=0;
+bool timerstop=false;
+
+TextEditingController fthour = TextEditingController();
+TextEditingController ftminute = TextEditingController();
+TextEditingController ftsecond = TextEditingController();

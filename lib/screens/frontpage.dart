@@ -45,7 +45,7 @@ class _FrontpageState extends State<Frontpage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  '${(dateTime.hour % 12 == 0) ? 12 : (dateTime.hour).toString().padLeft(2, '0')}:${dateTime.minute.toString().padLeft(2, '0')}',
+                  '${(dateTime.hour > 12) ? (dateTime.hour % 12).toString().padLeft(2, '0') : (dateTime.hour).toString().padLeft(2, '0')}:${dateTime.minute.toString().padLeft(2, '0')}',
                   style: TextStyle(
                       fontSize: 40,
                       color: Colors.white,

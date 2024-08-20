@@ -14,7 +14,7 @@ class _StrappageState extends State<Strappage> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Timer.periodic(Duration(seconds: 1), (timer){
+    Timer.periodic(const Duration(seconds: 1), (timer){
       setState(() {
         if(stop){
           second++;
@@ -42,7 +42,7 @@ class _StrappageState extends State<Strappage> {
         decoration: BoxDecoration(
           image: DecorationImage(
             fit: BoxFit.cover,
-            image: AssetImage(strap1),
+            image: AssetImage(strap),
           ),
         ),
         child: Column(
@@ -53,11 +53,11 @@ class _StrappageState extends State<Strappage> {
               width: 250,
               decoration: const BoxDecoration(
                 // color:Color(0xffD6D6F7),
-                color: Colors.white12,
+                color: Colors.white24,
                 shape: BoxShape.circle,
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black38,
+                    color: Colors.black26,
                     blurRadius: 25,
                     spreadRadius: 5,
                   ),
@@ -71,13 +71,6 @@ class _StrappageState extends State<Strappage> {
               ),
 
             ),
-            // CircularProgressIndicator(
-            //   strokeWidth: 2,
-            //   color: Colors.white,
-            //   value: 1,
-            //   strokeAlign: 80,
-            // valueColor:  ,
-
             Padding(
               padding: const EdgeInsets.only(top: 40),
               child: Row(
@@ -144,7 +137,7 @@ class _StrappageState extends State<Strappage> {
                           color: Colors.black45,
                           borderRadius: BorderRadius.circular(50),
                         ),
-                        child: Icon(
+                        child: const Icon(
                           Icons.restart_alt,
                           color: Colors.white,
                           size: 35,
@@ -157,6 +150,22 @@ class _StrappageState extends State<Strappage> {
             ),
           ],
         ),
+      ),
+      floatingActionButton: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(right: 140),
+            child: OutlinedButton(
+                onPressed: () {
+                  Navigator.of(context).pushNamed('/timer');
+                },
+                child: const Text(
+                  'Next',
+                  style: TextStyle(color: Colors.white),
+                )),
+          ),
+        ],
       ),
     );
   }
