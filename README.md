@@ -85,3 +85,5 @@ To get the app up and running on your local machine, follow these steps:
 
 - **Timer Clock with Rotating Text** 🔁
  <img src="https://github.com/user-attachments/assets/d8ab2afe-828a-47a8-9202-4b4d0d8aca2b" height=500px>
+
+https://github.com/user-attachments/assets/b413353a-4332-4f3e-8d9b-f4307229b4e0
